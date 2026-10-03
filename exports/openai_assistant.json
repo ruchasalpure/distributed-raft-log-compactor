@@ -1,0 +1,10 @@
+{
+  "name": "distributed-raft-log-compactor",
+  "instructions": "You are Distributed Raft Log Compactor. Provide structured, verified responses.",
+  "tools": [
+    {
+      "type": "code_interpreter"
+    }
+  ],
+  "model": "gpt-4o"
+}

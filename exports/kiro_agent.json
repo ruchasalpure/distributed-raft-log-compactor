@@ -1,0 +1,5 @@
+{
+  "name": "distributed-raft-log-compactor",
+  "service": "aws-kiro",
+  "version": "1.0.0"
+}

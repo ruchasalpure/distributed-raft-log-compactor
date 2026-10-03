@@ -1,0 +1,8 @@
+{
+  "agent_id": "distributed-raft-log-compactor",
+  "protocol": "opencode/v1",
+  "capabilities": [
+    "autonomous",
+    "governed"
+  ]
+}

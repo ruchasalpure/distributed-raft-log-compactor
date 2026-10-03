@@ -1,0 +1,26 @@
+spec_version: "0.1.0"
+name: "distributed-raft-log-compactor"
+version: "1.0.0"
+category: "devtools"
+author: "Rucha Salpure"
+description: "Dynamically coordinates Raft consensus log snapshotting, leader lease extensions, and WAL compaction across high-throughput distributed stores"
+capabilities:
+  - "raft-log-snapshot-coordination"
+  - "autonomous-decision-making"
+  - "explainable-auditing"
+  - "multi-agent-collaboration"
+skills:
+  - "raft-log-snapshot-coordination"
+tools:
+  - "python_executor"
+  - "audit_logger"
+  - "schema_validator"
+runtime:
+  environment: "python3.11"
+  memory_limit: "4GB"
+  timeout_seconds: 300
+governance:
+  audit_logging: true
+  human_in_the_loop: false
+  maker_checker: true
+  explainability_required: true
