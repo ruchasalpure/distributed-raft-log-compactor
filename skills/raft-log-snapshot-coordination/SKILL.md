@@ -1,17 +1,25 @@
 ---
-name: "raft-log-snapshot-coordination"
-description: "Calculates optimal snapshot thresholds based on disk write amplification and follower lag distributions"
-version: "1.0.0"
-category: "devtools"
+name: raft-log-snapshot-coordination
+description: Specialized capability for Distributed Raft Log Compactor.
+license: MIT
+allowed-tools: ""
+metadata:
+  author: "Rucha Salpure"
+  version: "1.0.0"
+  category: devtools
 ---
 
-# Skill: raft-log-snapshot-coordination
+# Distributed Raft Log Compactor — RAFT LOG SNAPSHOT COORDINATION Skill
 
-## Overview
-Calculates optimal snapshot thresholds based on disk write amplification and follower lag distributions.
+## Purpose
+The `raft-log-snapshot-coordination` capability provides high-assurance execution routines for `Distributed Raft Log Compactor`.
 
-## Execution Steps
-1. Parse and validate runtime parameters against the formal domain schema.
-2. Execute core computational and heuristic analysis pipeline.
-3. Format structured observations for Maker-Checker dual control review.
-4. Log all telemetry and performance metrics to the governance ledger.
+## Execution Workflow
+1. Validate input parameters against typed schemas and invariant constraints.
+2. Ingest contextual metrics and establish a deterministic baseline.
+3. Formulate candidate recommendations with explicit confidence intervals.
+4. Submit draft plans to the independent checker agent for verification.
+
+## Boundary Conditions
+- **Input validation:** Reject non-conforming or malformed payloads before evaluation.
+- **Fail-safe:** Escalate immediately if telemetry indicators exhibit critical anomalies.

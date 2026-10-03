@@ -1,5 +1,0 @@
-domain_knowledge:
-  category: "devtools"
-  agent: "distributed-raft-log-compactor"
-  ontology: "OpenGAP Core Ontology v1.0"
-  indexed_entities: 1024

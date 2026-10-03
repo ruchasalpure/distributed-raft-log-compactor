@@ -1,5 +1,0 @@
-{
-  "protocol": "gitclaw-0.1",
-  "agent": "distributed-raft-log-compactor",
-  "visas": 15
-}

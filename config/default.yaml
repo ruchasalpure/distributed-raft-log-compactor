@@ -1,6 +1,0 @@
-app:
-  name: "distributed-raft-log-compactor"
-  environment: "production"
-  logging:
-    level: "INFO"
-    format: "json"

@@ -1,4 +1,0 @@
-spec: nanobot/v1
-name: distributed-raft-log-compactor
-runtime: python3.11
-entrypoint: agent.py

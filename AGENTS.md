@@ -1,14 +1,26 @@
-# Multi-Agent Coordination Specification
+# Agent Architecture & Topology
 
-## Assigned Roles
-Maker:
-snapshot-scheduler
+Distributed Raft Log Compactor employs a modular multi-agent architecture with strict supervisory boundaries, deterministic resource budgeting, and zero prompt-leakage contracts.
 
-Checker:
-quorum-consistency-checker
+## Multi-Agent Roles
 
-## Coordination Protocol
-- **Primary Agent**: distributed-raft-log-compactor
-- **Governance Standard**: OpenGAP Dual-Agent Control Framework v0.1.0
-- **Consensus Threshold**: 100% agreement between Maker and Checker before state mutations.
-- **Fail-safe Mode**: If verification fails, transaction rolls back and alerts human supervisor.
+- **analysis-planner**: Performs primary technical analysis and forms candidate plans. Role: maker.
+- **invariant-auditor**: Audits diagnostic findings and verifies safety invariant constraints. Role: checker.
+- **compliance-auditor**: Verifies regulatory policies and logs cryptographically signed traces. Role: auditor.
+- **task-executor**: Dispatches verified interventions to external environments. Role: executor.
+
+## Segregation of Duties
+
+The system enforces strict segregation between plan generation and verification:
+- The maker role is held by analysis-planner.
+- The checker role is held by invariant-auditor.
+These roles are strictly partitioned and cannot be executed by the same agent.
+
+## Capabilities
+- Autonomous devtools diagnostics and domain-specific reasoning.
+- Multi-agent verification with mathematical invariant checks.
+- Cross-runtime portability across OpenAI SDK, CrewAI, Claude Code, and Lyzr.
+
+## Constraints
+- Zero raw user prompt leakage to unencrypted external logs.
+- Hard circuit-breakers preventing recursive task dispatch.
